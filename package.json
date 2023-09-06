@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest test/index.test.js"
+    "test": "jest test/sef3.test.js"
   },
   "repository": {
     "type": "git",
