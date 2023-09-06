@@ -1,14 +1,14 @@
 const sefinCipher = require('../index.js');
 
-describe('sef3', () => {
-	it('should encode a string', () => {
+describe('Sefin Cipher sef3', () => {
+	it('should encode a string correctly', () => {
 		const originalText = 'Kitten';
 		const encoded = sefinCipher.sef3.encode(originalText);
 		const expectedEncodedText = 'LJK.s3,uio.s3,yrt.s3,yrt.s3,ter.s3,nmb';
 		expect(encoded).toEqual(expectedEncodedText);
 	});
 
-	it('should decode an encoded string', () => {
+	it('should decode an encoded string correctly', () => {
 		const encodedText = 'LJK.s3,uio.s3,yrt.s3,yrt.s3,ter.s3,nmb';
 		const decoded = sefinCipher.sef3.decode(encodedText);
 		const expectedOriginalText = 'Kitten';
@@ -25,7 +25,7 @@ describe('sef3', () => {
 		expect(decoded).toEqual(specialText);
 	});
 
-	it('should handle empty input', () => {
+	it('should handle empty input for encoding and decoding', () => {
 		const encoded = sefinCipher.sef3.encode('');
 		expect(encoded).toEqual('');
 
@@ -33,12 +33,15 @@ describe('sef3', () => {
 		expect(decoded).toEqual('');
 	});
 
-	it('should handle numbers with spaces', () => {
+	it('should handle numbers with spaces in encoding and decoding', () => {
 		const text = '1 2 3 4 5 6 7 8 9 0';
 		const expected = '1.s3,ssj.s3,2.s3,ssj.s3,3.s3,ssj.s3,4.s3,ssj.s3,5.s3,ssj.s3,6.s3,ssj.s3,7.s3,ssj.s3,8.s3,ssj.s3,9.s3,ssj.s3,0';
 
-		const encoded = sefinCipher.sef3.decode(expected);
-		expect(encoded).toEqual(text);
+		const encoded = sefinCipher.sef3.encode(text);
+		expect(encoded).toEqual(expected);
+
+		const decoded = sefinCipher.sef3.decode(expected);
+		expect(decoded).toEqual(text);
 	});
 
 	it('should handle mixed case in encoding and decoding', () => {
