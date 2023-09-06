@@ -3,21 +3,31 @@ SefinCipher is a JavaScript module that provides text encoding and decoding func
 It allows you to encode and decode text by replacing characters with corresponding values from the mapping.
 Below, you'll find information on how to use this module.
 
-## Installation 📦
+## 📦 Installation
 You can install the SefinCipher module using npm:
 ```bash
 npm install sefin-cipher
 ```
 
 
-## Usage 🧑‍💻
+## 🧑‍💻 Usage
 Once you've installed the module, you can use it in your JavaScript project as follows:
 ```js
 const sefinCipher = require('sefin-cipher');
 ```
 
+## ✨ Available Ciphers
+The SefinCipher module currently supports the following ciphers:
 
-## Cipher Map 🔑
+| # | Name | Usage      | Functions         | Recommended? |
+|---|------|------------|:------------------|:-------------|
+| 1 | SEF3 | <>.sef3.<> | encode() decode() | ✅            |
+
+
+
+# SEF3 Cipher
+
+## 🔑 [SEF3] Cipher Map
 The cipherMap is a predefined character mapping used for encoding and decoding.
 It associates characters with their respective substitutions. For example:
 ```js
@@ -32,7 +42,7 @@ const cipherMap = new Map([
 ]);
 ```
 
-### Example 🔡
+### 🔡 Example
 ```
 #### Text
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -45,7 +55,7 @@ u.s3,yrt.s3,ssj.s3,lkl.s3,dsa.s3,nbv.s3,pio.s3,tre.s3,ter.s3,ssj.s3,ter.s3,yrt.s
 ```
 
 
-## Encoding Text 📝
+## 📝 [SEF3] Encoding Text
 To encode text using the SefinCipher module, you can use the encode function:
 ```javascript
 const encodedText = sefinCipher.sef3.encode("Do you like cats?");
@@ -53,14 +63,14 @@ console.log(encodedText); // Output: "SDF.s3,pio.s3,ssj.s3,tuy.s3,pio.s3,yiu.s3,
 ```
 
 
-## Decoding Text 📤
+## 📤 [SEF3] Decoding Text
 To decode a previously encoded text, use the decode function:
 ```javascript
 const decodedText = sefinCipher.sef3.decode("SDF.s3,pio.s3,ssj.s3,tuy.s3,pio.s3,yiu.s3,ssj.s3,lkl.s3,uio.s3,lkj.s3,ter.s3,ssj.s3,bnm.s3,dsa.s3,tuy.s3,nbv.s3,ter.s3,ssj.s3,zcx.s3,dsa.s3,yrt.s3,das.s3,<?>");
 console.log(decodedText); // Output: "Do you like cats?"
 ```
 
-### Example 🌟
+### 🌟 Example
 Here's a complete example of encoding and then decoding text using the SefinCipher module:
 ```javascript
 const sefinCipher = require('sefin-cipher');
@@ -74,7 +84,8 @@ console.log("Decoded:", decodedText);
 ```
 
 
-## License 📜
+
+## 📜 License
 This module is provided under the MIT License. Feel free to use and modify it according to your needs.
 
 For more information or to report issues, please visit the [GitHub repository](https://github.com/sefinek24/sefin-cipher).
