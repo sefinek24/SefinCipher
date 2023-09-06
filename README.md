@@ -20,7 +20,6 @@ const sefinCipher = require('sefin-cipher');
 ## Cipher Map 🔑
 The cipherMap is a predefined character mapping used for encoding and decoding.
 It associates characters with their respective substitutions. For example:
-
 ```js
 const cipherMap = new Map([
   ['a', 'dsa'],
@@ -31,6 +30,18 @@ const cipherMap = new Map([
   ['?', '<?>'],
   ['!', '[!]']
 ]);
+```
+
+### Example 🔡
+```
+#### Text
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+#### Encoded
+LKL.s3,pio.s3,tre.s3,ter.s3,bnm.s3,ssj.s3,uio.s3,iop.s3,das.s3,yiu.s3,bnm.s3,ssj.s3,sdf.s3,pio.s3,lkl.s3,pio.s3,tre.s3,ssj.s3,das.s3,uio.s3,yrt.s3,ssj.s3,dsa.s3,bnm.s3,ter.s3,yrt.s3,,.s3,ssj.s3,zcx.s3
+,pio.s3,nmb.s3,das.s3,ter.s3,zcx.s3,yrt.s3,ter.s3,yrt.s3,yiu.s3,tre.s3,ssj.s3,dsa.s3,sdf.s3,uio.s3,iop.s3,uio.s3,das.s3,zcx.s3,uio.s3,nmb.s3,fgh.s3,ssj.s3,ter.s3,lkl.s3,uio.s3,yrt.s3,,.s3,ssj.s3,das.s3,ter.s3,sdf.s
+3,ssj.s3,sdf.s3,pio.s3,ssj.s3,ter.s3,uio.s3,yiu.s3,das.s3,bnm.s3,pio.s3,sdf.s3,ssj.s3,yrt.s3,ter.s3,bnm.s3,iop.s3,pio.s3,tre.s3,ssj.s3,uio.s3,nmb.s3,zcx.s3,uio.s3,sdf.s3,uio.s3,sdf.s3,yiu.s3,nmb.s3,yrt.s3,ssj.s3,yi
+u.s3,yrt.s3,ssj.s3,lkl.s3,dsa.s3,nbv.s3,pio.s3,tre.s3,ter.s3,ssj.s3,ter.s3,yrt.s3,ssj.s3,sdf.s3,pio.s3,lkl.s3,pio.s3,tre.s3,ter.s3,ssj.s3,bnm.s3,dsa.s3,fgh.s3,nmb.s3,dsa.s3,ssj.s3,dsa.s3,lkl.s3,uio.s3,qew.s3,yiu.s3,dsa.s3,.
 ```
 
 
