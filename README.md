@@ -86,6 +86,6 @@ console.log("Decoded:", decodedText);
 
 
 # 📜 License
-This module is provided under the MIT License. Feel free to use and modify it according to your needs.
+This module is provided under the [MIT License](LICENSE). Feel free to use and modify it according to your needs.
 
 For more information or to report issues, please visit the [GitHub repository](https://github.com/sefinek24/sefin-cipher).
