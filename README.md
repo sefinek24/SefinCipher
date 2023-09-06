@@ -27,7 +27,7 @@ The SefinCipher module currently supports the following ciphers:
 
 # 📑 SEF3 Cipher <div id="sef3-cipher-map"></div>
 
-## 🔑 [SEF3] Cipher Map
+## 🔑 Map
 The cipherMap is a predefined character mapping used for encoding and decoding.
 It associates characters with their respective substitutions. For example:
 ```js
@@ -55,7 +55,7 @@ u.s3,yrt.s3,ssj.s3,lkl.s3,dsa.s3,nbv.s3,pio.s3,tre.s3,ter.s3,ssj.s3,ter.s3,yrt.s
 ```
 
 
-## 📝 [SEF3] Encoding Text
+## 📝 Encoding Text
 To encode text using the SefinCipher module, you can use the encode function:
 ```javascript
 const encodedText = sefinCipher.sef3.encode("Do you like cats?");
@@ -63,7 +63,7 @@ console.log(encodedText); // Output: "SDF.s3,pio.s3,ssj.s3,tuy.s3,pio.s3,yiu.s3,
 ```
 
 
-## 📤 [SEF3] Decoding Text
+## 📤 Decoding Text
 To decode a previously encoded text, use the decode function:
 ```javascript
 const decodedText = sefinCipher.sef3.decode("SDF.s3,pio.s3,ssj.s3,tuy.s3,pio.s3,yiu.s3,ssj.s3,lkl.s3,uio.s3,lkj.s3,ter.s3,ssj.s3,bnm.s3,dsa.s3,tuy.s3,nbv.s3,ter.s3,ssj.s3,zcx.s3,dsa.s3,yrt.s3,das.s3,<?>");
