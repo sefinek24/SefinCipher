@@ -1,21 +1,39 @@
 {
   "name": "sefin-cipher",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "sefin-cipher is a JavaScript module that offers text encoding and decoding capabilities through a customized character mapping.",
   "main": "index.js",
   "scripts": {
     "test": "jest test/sef3.test.js"
   },
+  "license": "MIT",
+  "author": "Sefinek <contact@sefinek.net> (https://sefinek.net)",
+  "keywords": [
+    "nodejs",
+    "module",
+    "cipher",
+    "npm-package",
+    "ciphers",
+    "npm-module",
+    "ciphertext",
+    "cipher-algorithms",
+    "npm-cipher",
+    "sef3",
+    "sefin",
+    "sefin-cipher"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sefinek24/SefinCipher.git"
   },
-  "author": "Sefinek <contact@sefinek.net> (https://sefinek.net)",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sefinek24/SefinCipher/issues"
   },
   "homepage": "https://github.com/sefinek24/SefinCipher#readme",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
   "devDependencies": {
     "jest": "^29.6.4"
   }
