@@ -70,7 +70,7 @@ const decodedText = sefinCipher.sef3.decode("SDF.s3,pio.s3,ssj.s3,tuy.s3,pio.s3,
 console.log(decodedText); // Output: "Do you like cats?"
 ```
 
-### 🌟 Example
+# 🌟 Full Example
 Here's a complete example of encoding and then decoding text using the SefinCipher module:
 ```javascript
 const sefinCipher = require('sefin-cipher');
