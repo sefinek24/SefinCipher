@@ -4,16 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/normal.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sefinek24/sefin-cipher.git"
+    "url": "git+https://github.com/sefinek24/SefinCipher.git"
   },
   "author": "Sefinek <contact@sefinek.net> (https://sefinek.net)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sefinek24/sefin-cipher/issues"
+    "url": "https://github.com/sefinek24/SefinCipher/issues"
   },
-  "homepage": "https://github.com/sefinek24/sefin-cipher#readme"
+  "homepage": "https://github.com/sefinek24/SefinCipher#readme"
 }

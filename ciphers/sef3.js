@@ -52,46 +52,25 @@ const cipherMap = new Map([
 	['X', 'XZC'],
 	['Y', 'UTY'],
 	['Z', 'ZXC'],
+	['?', '<?>'],
+	['!', '[!]'],
 ]);
-
 
 const sefinCipher = {
 	encode: (text) => {
-		let encodedText = '';
-		for (let i = 0; i < text.length; i++) {
-			const char = text[i];
-			const cipher = cipherMap.get(char);
-			if (cipher !== undefined) {
-				encodedText += cipher + '.s3,';
-			} else {
-				encodedText += char;
-			}
-		}
-
-		return encodedText;
+		return text
+			.split('')
+			.map((char) => cipherMap.get(char) || char)
+			.join('.s3,');
 	},
 
 	decode: (text) => {
 		const decipherMap = new Map([...cipherMap.entries()].map(([k, v]) => [v, k]));
 
-		let decodedText = '';
-		let currentCipher = '';
-
-		for (let i = 0; i < text.length; i++) {
-			const char = text[i];
-
-			if (char === '.' && text[i + 1] === 's' && text[i + 2] === '3' && text[i + 3] === ',') {
-				decodedText += decipherMap.get(currentCipher) || currentCipher;
-				currentCipher = '';
-				i += 3;
-			} else {
-				currentCipher += char;
-			}
-		}
-
-		decodedText += decipherMap.get(currentCipher) || currentCipher;
-
-		return decodedText;
+		return text
+			.split('.s3,')
+			.map((cipher) => decipherMap.get(cipher) || cipher)
+			.join('');
 	},
 };
 
