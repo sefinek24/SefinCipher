@@ -1,6 +1,6 @@
 const sefinCipher = require('../index.js');
 
-const originalText = 'Do you like cats?';
+const originalText = 'AbCdEfGhIjKlMnOpQrStUvWxYz';
 console.log(`originalText: ${originalText}\n`);
 
 const encodedText = sefinCipher.sef3.encode(originalText);

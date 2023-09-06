@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node test/normal.js"
+    "test": "jest test/index.test.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sefinek24/SefinCipher/issues"
   },
-  "homepage": "https://github.com/sefinek24/SefinCipher#readme"
+  "homepage": "https://github.com/sefinek24/SefinCipher#readme",
+  "devDependencies": {
+    "jest": "^29.6.4"
+  }
 }
