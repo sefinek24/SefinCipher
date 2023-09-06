@@ -1,4 +1,4 @@
-# 📜 SefinCipher Module Documentation 🚀
+# 📜 SefinCipher Module Documentation
 SefinCipher is a JavaScript module that provides text encoding and decoding functionality using a custom character mapping.
 It allows you to encode and decode text by replacing characters with corresponding values from the mapping.
 Below, you'll find information on how to use this module.
@@ -25,7 +25,7 @@ The SefinCipher module currently supports the following ciphers:
 
 
 
-# SEF3 Cipher
+# 📑 SEF3 Cipher
 
 ## 🔑 [SEF3] Cipher Map
 The cipherMap is a predefined character mapping used for encoding and decoding.
