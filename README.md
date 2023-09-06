@@ -19,13 +19,13 @@ const sefinCipher = require('sefin-cipher');
 ## ✨ Available Ciphers
 The SefinCipher module currently supports the following ciphers:
 
-| # | Name | Usage      | Functions         | Recommended? |
-|---|------|------------|:------------------|:-------------|
-| 1 | SEF3 | <>.sef3.<> | encode() decode() | ✅            |
+| # | Name                     | Usage      | Functions         | Recommended? |
+|---|--------------------------|------------|:------------------|:-------------|
+| 1 | [SEF3](#sef3-cipher-map) | <>.sef3.<> | encode() decode() | ✅            |
 
 
 
-# 📑 SEF3 Cipher
+# 📑 SEF3 Cipher <div id="sef3-cipher-map"></div>
 
 ## 🔑 [SEF3] Cipher Map
 The cipherMap is a predefined character mapping used for encoding and decoding.
