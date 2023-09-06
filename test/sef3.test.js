@@ -1,6 +1,6 @@
 const sefinCipher = require('../index.js');
 
-describe('Sefin Cipher sef3', () => {
+describe('sef3 cipher', () => {
 	it('should encode a string correctly', () => {
 		const originalText = 'Kitten';
 		const encoded = sefinCipher.sef3.encode(originalText);
