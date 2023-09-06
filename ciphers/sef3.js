@@ -61,9 +61,8 @@ const sefinCipher = {
 			const char = text[i];
 			const cipher = cipherMap.get(char);
 			if (cipher !== undefined) {
-				encodedText += cipher + '.s3,'; // Dodaj znak rozróżniający zaszyfrowane znaki
+				encodedText += cipher + '.s3,';
 			} else {
-				// Jeśli znak nie został odnaleziony, dodaj go niezaszyfrowany
 				encodedText += char;
 			}
 		}
@@ -134,11 +133,7 @@ const sefinCipher = {
 			const char = text[i];
 
 			if (char === '.' && text[i + 1] === 's' && text[i + 2] === '3' && text[i + 3] === ',') {
-				if (decipherMap.has(currentCipher)) {
-					decodedText += decipherMap.get(currentCipher);
-				} else {
-					decodedText += currentCipher;
-				}
+				decodedText += decipherMap.get(currentCipher) || currentCipher;
 				currentCipher = '';
 				i += 3;
 			} else {
@@ -146,11 +141,7 @@ const sefinCipher = {
 			}
 		}
 
-		if (decipherMap.has(currentCipher)) {
-			decodedText += decipherMap.get(currentCipher);
-		} else {
-			decodedText += currentCipher;
-		}
+		decodedText += decipherMap.get(currentCipher) || currentCipher;
 
 		return decodedText;
 	},
